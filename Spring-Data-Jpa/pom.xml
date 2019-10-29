@@ -8,6 +8,11 @@
     <artifactId>Spring-Data-Jpa</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.hibernate.version>5.0.7.Final</project.hibernate.version>
+    </properties>
+
     <dependencies>
         <!-- junit -->
         <dependency>
