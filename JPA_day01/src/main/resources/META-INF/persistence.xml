@@ -14,7 +14,7 @@
 
         <properties>
             <!-- 连接数据库的基本信息 -->
-            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/jpa?useSSL=false&amp;serverTimezone=Asia/Shanghai"/>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/jpa?autoReconnect=true&amp;useSSL=false&amp;characterEncoding=utf-8"/>
             <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
             <property name="hibernate.connection.username" value="root"/>
             <property name="hibernate.connection.password" value="root"/>
