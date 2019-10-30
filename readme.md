@@ -1,4 +1,9 @@
+## 学习计划
+
+**自己学习所写的相关代码和相关文档也会上传至[github](https://github.com/kong0827/Spring-Data-JPA)**
+
 ### 1、学习目的
+
 * 1、快速掌握Java开发中的主流技术(SpringBoot, SpringData JPA，Spring Security等)
 * 2、了解并熟悉前端主流框架（Vue）,掌握ES6语法
 * 3、熟悉微服务架构，了解分布式系统
