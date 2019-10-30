@@ -2,7 +2,7 @@
 
 #### 入门案例
 
-	##### 1、新建maven工程
+##### 1、新建maven工程
 
 ##### 2、导入约束
 
@@ -64,6 +64,113 @@
 ##### 4、创建实体类并配置映射关系
 
 ```java
+/**
+ * 配置实体类与数据库的映射关系
+ * @Entity 声明实体类
+ * @Table 建立实体类和表的映射关系
+ * @Id 声明主键
+ * @GeneratedValue 主键的生成策略
+ * @Column 指定和表中字段的映射关系
+ *
+ */
+@Entity
+@Table(name="cst_customer")
+public class Customer {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "cust_id")
+    private Long custId;   // 客户Id 主键
+
+    @Column(name = "cust_name")
+    private String custName; // 客户姓名
+
+    @Column(name = "cust_source")
+    private String custSource; // 客户来源
+
+    @Column(name = "cust_industry")
+    private String custIndustry; // 客户级别
+
+    @Column(name = "cust_level")
+    private String custLevel; //客户级别
+
+    @Column(name = "cust_address")
+    private String custAddress; // 客户地址
+
+    @Column(name = "cust_phone")
+    private String custPhone; // 联系方式
+
+    public Customer() {
+    }
+
+    public Long getCustId() {
+        return custId;
+    }
+
+    public void setCustId(Long custId) {
+        this.custId = custId;
+    }
+
+    public String getCustName() {
+        return custName;
+    }
+
+    public void setCustName(String custName) {
+        this.custName = custName;
+    }
+
+    public String getCustSource() {
+        return custSource;
+    }
+
+    public void setCustSource(String custSource) {
+        this.custSource = custSource;
+    }
+
+    public String getCustIndustry() {
+        return custIndustry;
+    }
+
+    public void setCustIndustry(String custIndustry) {
+        this.custIndustry = custIndustry;
+    }
+
+    public String getCustLevel() {
+        return custLevel;
+    }
+
+    public void setCustLevel(String custLevel) {
+        this.custLevel = custLevel;
+    }
+
+    public String getCustAddress() {
+        return custAddress;
+    }
+
+    public void setCustAddress(String custAddress) {
+        this.custAddress = custAddress;
+    }
+
+    public String getCustPhone() {
+        return custPhone;
+    }
+
+    public void setCustPhone(String custPhone) {
+        this.custPhone = custPhone;
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "custId=" + custId +
+                ", custName='" + custName + '\'' +
+                ", custSource='" + custSource + '\'' +
+                ", custIndustry='" + custIndustry + '\'' +
+                ", custLevel='" + custLevel + '\'' +
+                ", custAddress='" + custAddress + '\'' +
+                ", custPhone='" + custPhone + '\'' +
+                '}';
+    }
+}
 
 ```
 
@@ -114,15 +221,7 @@
 
 ```java
 public class CustomerTest {
-    /**
-     * 操作步骤
-     *  1、加载配置文件创建工厂(实体管理类工厂)
-     *  2、通过实体管理类工厂获取实体管理器
-     *  3、获取事务对象，开启事务
-     *  4、完成保存操作
-     *  5、提交事务
-     *  6、释放资源
-     */
+  
     @Test
     public void saveCustomerTest() {
         // myJpa是persistence.xml中persistence-unit标签的name值
@@ -148,3 +247,76 @@ public class CustomerTest {
     }
 }
 ```
+
+#### JPA的主键生成策略			
+
+- GenerationType.IDENTITY       自增，mysql,底层数据库必须支持自动增长
+
+- GenerationType.SEQUENCE    序列，oracle,底层数据库必须支持序列
+- GenerationType.TABLE   jpa提供的一种机制，通过一张数据库表的形式帮助完成主键自增
+- GenerationType.AUTO  程序自动帮我们选择主键生成策略
+
+
+
+####  JPA操作小结
+
+* 1、加载配置文件创建工厂(实体管理类工厂)
+
+  * **Persistence**: 静态方法  根据持久化单元名称创建实体管理器工厂
+
+    createEntityManagerFactory ( 持久化单元名称 )
+
+  * 作用：创建实体管理器工厂
+
+* 2、通过实体管理类工厂获取实体管理器
+
+  * **EntityManagerFactory**: 获取EntityManager对象
+
+    方法：createEntityManager
+
+    - 内部维护了很多内容
+
+    - 内部维护了数据库信息
+
+    - 维护了缓存信息
+    - 维护了所有的实体管理器
+    - 在创建EntityManagerFactory的过程中会根据配置创建数据表
+
+  - EntityManagerFactory的常见过程比较浪费资源
+
+    特点：线程安全的类
+
+    - 如何解决EntityManagerFactory创建浪费资源耗时问题
+
+      创建一个公共的EntityManagerFactory的对象
+
+      静态代码块的形式创建EntityManagerFactory
+
+*   3、获取事务对象，开启事务
+
+  * **EntityManager**对象，实体管理器。真正操作数据库的对象
+
+    beginTransaction: 创建事务对象
+
+    presist: 保存
+
+    merge: 更新
+
+    remove: 删除
+
+    find/getRefrence: 根据id查询
+
+  * **Trancastion** 对象: 事务
+
+    begin： 开启
+
+    commit：提交
+
+    rollback: 回滚
+
+* 4、完成保存操作
+
+*   5、提交事务
+
+*  6、释放资源
+   
