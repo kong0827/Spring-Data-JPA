@@ -7,6 +7,15 @@
 ##### 2、导入约束
 
 ```xml
+<properties>      
+    <project.build.sourceEncoding>
+        UTF8
+    </project.build.sourceEncoding>
+ <project.hibernate.version>
+     5.0.7.Final
+    </project.hibernate.version>
+</properties>
+
 <dependencies>
         <!-- junit -->
         <dependency>
