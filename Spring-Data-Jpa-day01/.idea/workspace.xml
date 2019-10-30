@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9623e15-0aee-4ab6-8542-3bfa256dfd8e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Spring Data Jpa 笔记.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring Data Jpa 笔记.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b9623e15-0aee-4ab6-8542-3bfa256dfd8e" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +14,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kxj/entity/Customer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="494">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
@@ -27,7 +23,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/kxj/test/CustomerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
+            <state relative-caret-position="684">
               <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -39,7 +35,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
+            <state relative-caret-position="513">
               <caret line="27" column="65" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="65" />
             </state>
           </provider>
@@ -48,12 +44,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kxj/utils/JpaUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
+            <state relative-caret-position="342">
               <caret line="20" column="49" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#495#496#0" expanded="true" />
-                <element signature="e#537#538#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -62,7 +56,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/kxj/test/CustomerTest2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="456">
               <caret line="31" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
@@ -120,64 +114,35 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Spring-Data-Jpa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spring-Data-Jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="Spring-Data-Jpa-day01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Spring-Data-Jpa-day01" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Spring-Data-Jpa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spring-Data-Jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="Spring-Data-Jpa-day01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Spring-Data-Jpa-day01" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Spring-Data-Jpa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spring-Data-Jpa" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring-Data-Jpa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spring-Data-Jpa" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring-Data-Jpa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spring-Data-Jpa" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="kxj" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring-Data-Jpa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spring-Data-Jpa" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="kxj" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring-Data-Jpa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spring-Data-Jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="Spring-Data-Jpa-day01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Spring-Data-Jpa-day01" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Spring-Data-Jpa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spring-Data-Jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="Spring-Data-Jpa-day01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Spring-Data-Jpa-day01" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Spring-Data-Jpa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spring-Data-Jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="Spring-Data-Jpa-day01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Spring-Data-Jpa-day01" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -188,13 +153,12 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572443032516" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572443048327" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -312,16 +276,11 @@
       <updated>1572359544600</updated>
       <workItem from="1572359554980" duration="5049000" />
       <workItem from="1572439481720" duration="1983000" />
+      <workItem from="1572442916192" duration="414000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CustomerTest_saveCustomerTest - 2019.10.29 at 23h 56m 59s.xml">
-      <configuration name="CustomerTest.saveCustomerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CustomerTest_saveCustomerTest - 2019.10.29 at 23h 58m 06s.xml">
-      <configuration name="CustomerTest.saveCustomerTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CustomerTest_saveCustomerTest - 2019.10.30 at 00h 00m 27s.xml">
       <configuration name="CustomerTest.saveCustomerTest" configurationId="JUnit" />
     </history-entry>
@@ -340,15 +299,27 @@
     <history-entry file="CustomerTest_saveCustomerTest - 2019.10.30 at 21h 01m 37s.xml">
       <configuration name="CustomerTest.saveCustomerTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CustomerTest2_saveCustomerTest - 2019.10.30 at 21h 42m 42s.xml">
+      <configuration name="CustomerTest2.saveCustomerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomerTest2_saveCustomerTest - 2019.10.30 at 21h 43m 15s.xml">
+      <configuration name="CustomerTest2.saveCustomerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomerTest2_saveCustomerTest - 2019.10.30 at 21h 43m 34s.xml">
+      <configuration name="CustomerTest2.saveCustomerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomerTest2_saveCustomerTest - 2019.10.30 at 21h 44m 03s.xml">
+      <configuration name="CustomerTest2.saveCustomerTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7032000" />
+    <option name="totallyTimeSpent" value="7446000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25379938" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2575988" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Persistence" order="3" side_tool="true" />
@@ -356,10 +327,9 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="UI Designer" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.47540984" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.47540984" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -370,6 +340,7 @@
       <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -392,9 +363,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kxj/entity/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/kxj/test/CustomerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
+        <state relative-caret-position="684">
           <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -402,35 +380,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kxj/entity/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
+        <state relative-caret-position="513">
           <caret line="27" column="65" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kxj/utils/JpaUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
+        <state relative-caret-position="342">
           <caret line="20" column="49" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#495#496#0" expanded="true" />
-            <element signature="e#537#538#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/kxj/test/CustomerTest2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="456">
           <caret line="31" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
