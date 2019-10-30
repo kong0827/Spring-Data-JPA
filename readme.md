@@ -1,6 +1,6 @@
 ## 学习计划
 
-**自己学习所写的相关代码和相关文档也会上传至github**
+**自己学习所写的相关代码和相关文档也会上传至[github](https://github.com/kong0827/Spring-Data-JPA)**
 
 ### 1、学习目的
 
