@@ -138,6 +138,7 @@ public class CustomerSuperTest {
             transaction.rollback();
             e.printStackTrace();
         } finally {
+            //添加一点注释
             manager.close();
         }
 
