@@ -129,4 +129,17 @@ public class CustomerTest {
         }
 
     }
+
+    @Test
+    public void delById (){
+        EntityManager manager=null;
+        EntityTransaction transaction=null;
+
+         manager = JPAUtil.getEntityManager();
+         transaction=manager.getTransaction();
+         //start transaction
+        transaction.begin();
+
+
+    }
 }
