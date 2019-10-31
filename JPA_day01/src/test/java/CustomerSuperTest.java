@@ -105,7 +105,7 @@ public class CustomerSuperTest {
             transaction=manager.getTransaction();
             //start transaction
             transaction.begin();
-            String sql ="From cst_customer order by custId desc";
+            String sql ="from cst_customer order by custId desc";
             Query query=manager.createQuery(sql);
             List<Customer> list = query.getResultList();
             for (Customer customer:list){

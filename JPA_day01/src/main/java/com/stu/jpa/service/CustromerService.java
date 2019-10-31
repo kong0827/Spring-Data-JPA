@@ -6,4 +6,5 @@ package com.stu.jpa.service;
  * @description
  */
 public interface CustromerService {
+
 }

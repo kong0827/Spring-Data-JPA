@@ -6,8 +6,7 @@
         <setting name="validation-enabled" value="true" />
         <datasource-mapping>
           <factory-entry name="NewPersistenceUnit" value="d779fef1-3ddf-4830-9962-d47255c9befe" />
-          <factory-entry name="entityManagerFactory" />
-          <factory-entry name="myJpa" value="2d77a0e6-cb79-44f0-b004-81b7bce57aac" />
+          <factory-entry name="entityManagerFactory" value="2d77a0e6-cb79-44f0-b004-81b7bce57aac" />
         </datasource-mapping>
         <naming-strategy-map />
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/main/resources/META-INF/persistence.xml" />

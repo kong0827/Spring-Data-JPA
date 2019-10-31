@@ -418,3 +418,26 @@ Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: unexpected token
 2019-10-31 14:33:23,398 - Customer{custId=90, custName='通联金融', custSource='null', custIndustry='null', custLevel='null', custAddress='上海市浦东新区', custPhone='null'}
 2019-10-31 14:33:23,402 - Closing org.springframework.context.support.GenericApplicationContext@21213b92: startup date [Thu Oct 31 14:33:19 CST 2019]; root of context hierarchy
 2019-10-31 14:33:23,407 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-31 14:42:00,804 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-10-31 14:42:00,814 - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/web/context/request/RequestAttributes]
+2019-10-31 14:42:00,826 - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3532ec19, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@68c4039c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@ae45eb6, org.springframework.test.context.transaction.TransactionalTestExecutionListener@59f99ea, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@27efef64]
+2019-10-31 14:42:00,993 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2019-10-31 14:42:01,533 - Refreshing org.springframework.context.support.GenericApplicationContext@21213b92: startup date [Thu Oct 31 14:42:01 CST 2019]; root of context hierarchy
+2019-10-31 14:42:01,830 - MLog clients using log4j logging.
+2019-10-31 14:42:02,122 - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2019-10-31 14:42:02,503 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-10-31 14:42:02,528 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-31 14:42:02,656 - HHH000412: Hibernate Core {5.0.7.Final}
+2019-10-31 14:42:02,657 - HHH000206: hibernate.properties not found
+2019-10-31 14:42:02,659 - HHH000021: Bytecode provider name : javassist
+2019-10-31 14:42:02,705 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-10-31 14:42:02,977 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 31q1i9a6914mxp1ytlkfv|66d3eec0, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 31q1i9a6914mxp1ytlkfv|66d3eec0, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/jpa?characterEncoding=utf8&useSSL=false&serverTimezone=UTC, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-10-31 14:42:03,260 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2019-10-31 14:42:03,307 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-10-31 14:42:03,638 - HV000001: Hibernate Validator 5.2.1.Final
+2019-10-31 14:42:04,442 - Customer{custId=90, custName='通联金融', custSource='null', custIndustry='null', custLevel='null', custAddress='上海市浦东新区', custPhone='null'}
+2019-10-31 14:42:04,444 - Closing org.springframework.context.support.GenericApplicationContext@21213b92: startup date [Thu Oct 31 14:42:01 CST 2019]; root of context hierarchy
+2019-10-31 14:42:04,446 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-31 14:43:06,734 - HHH000318: Could not find any META-INF/persistence.xml file in the classpath
