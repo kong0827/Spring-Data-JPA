@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d000a7f4-fa7a-458a-8c51-91f9c8e2cdb2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../SpringDataJpaday03/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDataJpaday03/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDataJpaday03/src/main/java/com/kxj/entity/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringDataJpaday03/src/main/java/com/kxj/utils/JpaUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring-Data-Jpa-day02.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-Data-Jpa-day02.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDataJpaday03/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringDataJpaday03/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -200,8 +195,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572693392500" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572693633720" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SpringDataJpaday03" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
@@ -296,7 +291,7 @@
       <updated>1572445927241</updated>
       <workItem from="1572445931837" duration="1511000" />
       <workItem from="1572447497411" duration="105000" />
-      <workItem from="1572688857064" duration="1716000" />
+      <workItem from="1572688857064" duration="1726000" />
     </task>
     <servers />
   </component>
@@ -333,11 +328,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3332000" />
+    <option name="totallyTimeSpent" value="3342000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2575988" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
