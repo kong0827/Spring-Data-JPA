@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1740a58-221f-40ca-9eac-4c5dcf94d615" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Spring-Data-Jpa-day02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring-Data-Jpa-day02/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringDataJpaday03.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Spring-Data-Jpa-day03.iml" afterDir="false" />
-    </list>
+    <list default="true" id="a1740a58-221f-40ca-9eac-4c5dcf94d615" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/CustomerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="130" column="18" selection-start-line="130" selection-start-column="18" selection-end-line="130" selection-end-column="18" />
+            <state relative-caret-position="313">
+              <caret line="136" lean-forward="true" selection-start-line="136" selection-end-line="136" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,7 +92,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-5" />
     <option name="y" value="4" />
     <option name="width" value="1376" />
@@ -108,58 +104,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="SpringDataJpaday03" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringDataJpaday03" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringDataJpaday03" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringDataJpaday03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringDataJpaday03" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringDataJpaday03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringDataJpaday03" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringDataJpaday03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringDataJpaday03" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringDataJpaday03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="kxj" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringDataJpaday03" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringDataJpaday03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="kxj" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringDataJpaday03" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringDataJpaday03" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
@@ -167,7 +112,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572693772994" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572693781814" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -267,13 +212,11 @@
       <updated>1572691065901</updated>
       <workItem from="1572691073577" duration="2548000" />
       <workItem from="1572693661344" duration="25000" />
+      <workItem from="1572693721969" duration="624000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CustomerTest_ordersTest - 2019.11.02 at 19h 05m 28s.xml">
-      <configuration name="CustomerTest.ordersTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CustomerTest_ordersTest - 2019.11.02 at 19h 06m 00s.xml">
       <configuration name="CustomerTest.ordersTest" configurationId="JUnit" />
     </history-entry>
@@ -301,14 +244,18 @@
     <history-entry file="CustomerTest_whereTest - 2019.11.02 at 19h 17m 09s.xml">
       <configuration name="CustomerTest.whereTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CustomerTest_whereTest - 2019.11.02 at 19h 22m 48s.xml">
+      <configuration name="CustomerTest.whereTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2573000" />
+    <option name="totallyTimeSpent" value="3197000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25379938" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2575988" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Persistence" order="3" side_tool="true" />
@@ -371,8 +318,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CustomerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="130" column="18" selection-start-line="130" selection-start-column="18" selection-end-line="130" selection-end-column="18" />
+        <state relative-caret-position="313">
+          <caret line="136" lean-forward="true" selection-start-line="136" selection-end-line="136" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
