@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="732ef8ea-bb2d-44be-944c-ba61b6556bd5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JPA_day01.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JPA_day01.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/notify-subscription.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/notify-subscription.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SpringJpaCustomerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SpringJpaCustomerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/CustomerSuperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CustomerSuperTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SpringJpaCustomerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SpringJpaCustomerTest.class" afterDir="false" />
-    </list>
+    <list default="true" id="732ef8ea-bb2d-44be-944c-ba61b6556bd5" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -113,7 +106,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/SpringJpaCustomerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
+            <state relative-caret-position="1080">
               <caret line="55" column="44" selection-start-line="55" selection-start-column="44" selection-end-line="55" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -215,7 +208,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -274,6 +266,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -401,6 +394,7 @@
       <workItem from="1572445176792" duration="264000" />
       <workItem from="1572445508167" duration="4252000" />
       <workItem from="1572748235813" duration="1197000" />
+      <workItem from="1572962451145" duration="176000" />
     </task>
     <servers />
   </component>
@@ -437,13 +431,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34898000" />
+    <option name="totallyTimeSpent" value="35074000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.52649575" visible="true" weight="0.1785174" />
-      <window_info id="Structure" order="1" sideWeight="0.47350428" side_tool="true" visible="true" weight="0.1785174" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5982906" visible="true" weight="0.1785174" />
+      <window_info id="Structure" order="1" sideWeight="0.4017094" side_tool="true" visible="true" weight="0.1785174" />
       <window_info id="Designer" order="2" />
       <window_info id="Persistence" order="3" sideWeight="0.5011338" side_tool="true" weight="0.17773019" />
       <window_info id="Capture Tool" order="4" />
@@ -659,20 +653,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/stu/jpa/util/JPAUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SpringJpaCustomerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
+        <state relative-caret-position="1080">
           <caret line="55" column="44" selection-start-line="55" selection-start-column="44" selection-end-line="55" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/stu/jpa/util/JPAUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
         </state>
       </provider>
     </entry>

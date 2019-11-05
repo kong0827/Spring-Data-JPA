@@ -1,0 +1,71 @@
+2019-11-06 00:04:47,048 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-11-06 00:04:47,057 - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2019-11-06 00:04:47,077 - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@56235b8e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3632be31, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5abca1e0, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2286778, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4e9ba398]
+2019-11-06 00:04:47,247 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2019-11-06 00:04:47,952 - Refreshing org.springframework.context.support.GenericApplicationContext@394e1a0f: startup date [Wed Nov 06 00:04:47 CST 2019]; root of context hierarchy
+2019-11-06 00:04:49,523 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-11-06 00:04:49,570 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-06 00:04:49,815 - HHH000412: Hibernate Core {5.0.7.Final}
+2019-11-06 00:04:49,819 - HHH000206: hibernate.properties not found
+2019-11-06 00:04:49,823 - HHH000021: Bytecode provider name : javassist
+2019-11-06 00:04:49,923 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-11-06 00:04:50,364 - {dataSource-1} inited
+2019-11-06 00:04:50,764 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2019-11-06 00:04:50,828 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-11-06 00:04:51,606 - HV000001: Hibernate Validator 5.2.1.Final
+2019-11-06 00:04:52,127 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-06 00:04:52,858 - HHH000397: Using ASTQueryTranslatorFactory
+2019-11-06 00:04:53,240 - Customer{custId=428, custName='Bob', custSource='company', custIndustry='12', custLevel='1231', custAddress='China', custPhone='18656484512'}
+2019-11-06 00:04:53,240 - Customer{custId=432, custName='Bob', custSource='company', custIndustry='12', custLevel='1231', custAddress='China', custPhone=''}
+2019-11-06 00:04:53,251 - Closing org.springframework.context.support.GenericApplicationContext@394e1a0f: startup date [Wed Nov 06 00:04:47 CST 2019]; root of context hierarchy
+2019-11-06 00:04:53,255 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-06 00:04:53,265 - {dataSource-1} closed
+2019-11-06 00:05:25,539 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-11-06 00:05:25,548 - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2019-11-06 00:05:25,569 - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@56235b8e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3632be31, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5abca1e0, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2286778, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4e9ba398]
+2019-11-06 00:05:25,713 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2019-11-06 00:05:26,363 - Refreshing org.springframework.context.support.GenericApplicationContext@394e1a0f: startup date [Wed Nov 06 00:05:26 CST 2019]; root of context hierarchy
+2019-11-06 00:05:27,966 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-11-06 00:05:28,016 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-06 00:05:28,218 - HHH000412: Hibernate Core {5.0.7.Final}
+2019-11-06 00:05:28,221 - HHH000206: hibernate.properties not found
+2019-11-06 00:05:28,224 - HHH000021: Bytecode provider name : javassist
+2019-11-06 00:05:28,314 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-11-06 00:05:28,893 - {dataSource-1} inited
+2019-11-06 00:05:29,264 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2019-11-06 00:05:29,327 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-11-06 00:05:30,134 - HV000001: Hibernate Validator 5.2.1.Final
+2019-11-06 00:05:30,714 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-06 00:05:31,434 - HHH000397: Using ASTQueryTranslatorFactory
+2019-11-06 00:05:31,777 - Customer{custId=428, custName='Bob', custSource='company', custIndustry='12', custLevel='1231', custAddress='China', custPhone='18656484512'}
+2019-11-06 00:05:31,777 - Customer{custId=432, custName='Bob', custSource='company', custIndustry='12', custLevel='1231', custAddress='China', custPhone=''}
+2019-11-06 00:05:31,782 - Closing org.springframework.context.support.GenericApplicationContext@394e1a0f: startup date [Wed Nov 06 00:05:26 CST 2019]; root of context hierarchy
+2019-11-06 00:05:31,785 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-06 00:05:31,792 - {dataSource-1} closed
+2019-11-06 00:06:26,326 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-11-06 00:06:26,336 - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2019-11-06 00:06:26,359 - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@56235b8e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3632be31, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5abca1e0, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2286778, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4e9ba398]
+2019-11-06 00:06:26,554 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2019-11-06 00:06:27,318 - Refreshing org.springframework.context.support.GenericApplicationContext@394e1a0f: startup date [Wed Nov 06 00:06:27 CST 2019]; root of context hierarchy
+2019-11-06 00:06:28,890 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-11-06 00:06:28,928 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-06 00:06:29,081 - HHH000412: Hibernate Core {5.0.7.Final}
+2019-11-06 00:06:29,083 - HHH000206: hibernate.properties not found
+2019-11-06 00:06:29,085 - HHH000021: Bytecode provider name : javassist
+2019-11-06 00:06:29,157 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-11-06 00:06:29,506 - {dataSource-1} inited
+2019-11-06 00:06:29,790 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2019-11-06 00:06:29,864 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-11-06 00:06:30,625 - HV000001: Hibernate Validator 5.2.1.Final
+2019-11-06 00:06:31,165 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-06 00:06:32,048 - HHH000397: Using ASTQueryTranslatorFactory
+2019-11-06 00:06:32,363 - Customer{custId=432, custName='Bob', custSource='company', custIndustry='12', custLevel='1231', custAddress='China', custPhone=''}
+2019-11-06 00:06:32,368 - Closing org.springframework.context.support.GenericApplicationContext@394e1a0f: startup date [Wed Nov 06 00:06:27 CST 2019]; root of context hierarchy
+2019-11-06 00:06:32,370 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-06 00:06:32,377 - {dataSource-1} closed
