@@ -6,6 +6,8 @@ package com.kxj.entity;
  * @Desc 客户实体类
  */
 
+import org.hibernate.annotations.Proxy;
+
 import javax.persistence.*;
 
 /**
@@ -19,6 +21,7 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "cst_customer")
+@Proxy(lazy = false)
 public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
