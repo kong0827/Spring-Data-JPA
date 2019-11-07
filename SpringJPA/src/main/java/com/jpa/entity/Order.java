@@ -28,7 +28,7 @@ public class Order {
     @Column(name = "cust_id")
     private int custId;
 
-    @OneToMany(targetEntity = Product.class,fetch = FetchType.EAGER)
+    @OneToMany(targetEntity = Product.class,fetch = FetchType.EAGER,cascade = CascadeType.ALL)
     @JoinColumn(name = "order_id",referencedColumnName = "order_id")
     private List<Product> products;
 

@@ -28,7 +28,15 @@ public class Customer implements Serializable {
     @Column(name = "cust_phone")
     private String custPhone;
 
-    @OneToMany(targetEntity = Order.class,fetch = FetchType.EAGER)
+    /**
+     * cascade:配置级联操作
+     * 		CascadeType.MERGE	级联更新
+     * 		CascadeType.PERSIST	级联保存：
+     * 		CascadeType.REFRESH 级联刷新：
+     * 		CascadeType.REMOVE	级联删除：
+     * 		CascadeType.ALL		包含所有
+     */
+    @OneToMany(targetEntity = Order.class,fetch = FetchType.EAGER,cascade = CascadeType.ALL)
     @JoinColumn(name = "cust_id",referencedColumnName = "cust_id")
     private List<Order> orders;
 

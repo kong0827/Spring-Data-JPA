@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f54a7a2e-f2f1-4edc-8b12-fec3b223b299" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jpa/entity/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jpa/entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4f3ea1ca-0e9f-4098-9cde-5782fe365247.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4f3ea1ca-0e9f-4098-9cde-5782fe365247.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/notify-subscription.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/notify-subscription.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/entity/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/entity/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/entity/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jpa/entity/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestCustomer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestCustomer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestCustomer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestCustomer.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -78,8 +71,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jpa/entity/Customer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="114" column="18" selection-start-line="114" selection-start-column="18" selection-end-line="114" selection-end-column="18" />
+            <state relative-caret-position="262">
+              <caret line="50" lean-forward="true" selection-start-line="48" selection-start-column="14" selection-end-line="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,7 +84,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jpa/entity/Order.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="224">
-              <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+              <caret line="30" column="93" selection-start-line="30" selection-start-column="93" selection-end-line="30" selection-end-column="93" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,7 +95,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jpa/entity/Product.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
+            <state relative-caret-position="561">
               <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
               <folding>
                 <element signature="e#373#374#0" expanded="true" />
@@ -115,8 +108,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestCustomer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="24" />
+            <state relative-caret-position="159">
+              <caret line="89" column="59" selection-start-line="89" selection-start-column="59" selection-end-line="89" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -148,10 +141,10 @@
         <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/jpa/dao/CustomerDao.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jpa/entity/Product.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jpa/entity/Order.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jpa/entity/Customer.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestCustomer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jpa/entity/Product.java" />
       </list>
     </option>
   </component>
@@ -282,12 +275,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestCustomer.TestPage">
+  <component name="RunManager" selected="JUnit.TestCustomer.TestDelete">
     <configuration name="TestCustomer.TestCondition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SpringJPA" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestCustomer" />
       <option name="METHOD_NAME" value="TestCondition" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCustomer.TestDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringJPA" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestCustomer" />
+      <option name="METHOD_NAME" value="TestDelete" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -315,6 +318,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestCustomer.TestDelete" />
         <item itemvalue="JUnit.TestCustomer.TestPage" />
         <item itemvalue="JUnit.TestCustomer.TestSave" />
         <item itemvalue="JUnit.TestCustomer.TestCondition" />
@@ -333,26 +337,11 @@
       <updated>1572962646182</updated>
       <workItem from="1572962653319" duration="6859000" />
       <workItem from="1573048730243" duration="5871000" />
-      <workItem from="1573138435300" duration="1231000" />
+      <workItem from="1573138435300" duration="2568000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestCustomer_TestPage - 2019.11.07 at 23h 03m 04s.xml">
-      <configuration name="TestCustomer.TestPage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCustomer_TestPage - 2019.11.07 at 23h 04m 06s.xml">
-      <configuration name="TestCustomer.TestPage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCustomer_TestPage - 2019.11.07 at 23h 04m 40s.xml">
-      <configuration name="TestCustomer.TestPage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCustomer_TestPage - 2019.11.07 at 23h 05m 49s.xml">
-      <configuration name="TestCustomer.TestPage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCustomer_TestPage - 2019.11.07 at 23h 06m 45s.xml">
-      <configuration name="TestCustomer.TestPage" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestCustomer_TestPage - 2019.11.07 at 23h 07m 07s.xml">
       <configuration name="TestCustomer.TestPage" configurationId="JUnit" />
     </history-entry>
@@ -368,9 +357,24 @@
     <history-entry file="TestCustomer_TestPage - 2019.11.07 at 23h 15m 23s.xml">
       <configuration name="TestCustomer.TestPage" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestCustomer_TestDelete - 2019.11.07 at 23h 27m 34s.xml">
+      <configuration name="TestCustomer.TestDelete" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCustomer_TestDelete - 2019.11.07 at 23h 29m 27s.xml">
+      <configuration name="TestCustomer.TestDelete" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCustomer_TestDelete - 2019.11.07 at 23h 34m 25s.xml">
+      <configuration name="TestCustomer.TestDelete" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCustomer_TestDelete - 2019.11.07 at 23h 34m 51s.xml">
+      <configuration name="TestCustomer.TestDelete" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCustomer_TestDelete - 2019.11.07 at 23h 36m 15s.xml">
+      <configuration name="TestCustomer.TestDelete" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13961000" />
+    <option name="totallyTimeSpent" value="15298000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -385,7 +389,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.53162396" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.41367522" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.50256413" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -412,18 +416,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/TestCustomer.java</url>
-          <line>37</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SpringJPA$TestCustomer_TestPage.ic" NAME="TestCustomer.TestPage Coverage Results" MODIFIED="1573139171769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -473,16 +465,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jpa/entity/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="114" column="18" selection-start-line="114" selection-start-column="18" selection-end-line="114" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://E:/maven/Repository/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -493,7 +475,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jpa/entity/Order.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
-          <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+          <caret line="30" column="93" selection-start-line="30" selection-start-column="93" selection-end-line="30" selection-end-column="93" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -502,7 +484,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jpa/entity/Product.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
+        <state relative-caret-position="561">
           <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
           <folding>
             <element signature="e#373#374#0" expanded="true" />
@@ -511,10 +493,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jpa/entity/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="50" lean-forward="true" selection-start-line="48" selection-start-column="14" selection-end-line="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestCustomer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="24" />
+        <state relative-caret-position="159">
+          <caret line="89" column="59" selection-start-line="89" selection-start-column="59" selection-end-line="89" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

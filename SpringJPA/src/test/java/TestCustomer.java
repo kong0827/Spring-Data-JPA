@@ -33,7 +33,7 @@ public class TestCustomer {
     @Test
     public void TestPage(){
 
-        //设置查询条件
+        //设置查询条件,当存在外键约束时，jpa的查询会将与之相关的所有的文件都查询出来
         PageRequest pageable=new PageRequest(0,5, Sort.Direction.ASC,"custId");
         Page<Customer> customers = customerDao.findAll(pageable);
         for (Customer customer:customers) {
@@ -81,10 +81,13 @@ public class TestCustomer {
     }
 
     @Test
-    public void testDelete(){
+    public void TestDelete(){
+        customerDao.deleteById(435);
 
     }
 
+
+    //当删除具有主外键关系的表数据时，删除主键，会将附带的以该主键作为外键的数据删除，但是这是需要通过注解设置的
     @Test
     public void TestSave(){
         customer.setCustId(999);
