@@ -2,6 +2,7 @@ package com.jpa.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 
 //数据持久化（指定当前类是实体类）
@@ -26,6 +27,11 @@ public class Customer implements Serializable {
     private String custAddress;
     @Column(name = "cust_phone")
     private String custPhone;
+
+    @OneToMany(targetEntity = Order.class,fetch = FetchType.EAGER)
+    @JoinColumn(name = "cust_id",referencedColumnName = "cust_id")
+    private List<Order> orders;
+
 
     public int getCustId() {
         return custId;
@@ -83,17 +89,26 @@ public class Customer implements Serializable {
         this.custPhone = custPhone;
     }
 
-    public Customer(int custId, String custName, String custSource, String custIndustry, String custLevel, String custAddress, String custPhone) {
-        this.custId = custId;
+
+    public Customer() {
+    }
+
+    public Customer(String custName, String custSource, String custIndustry, String custLevel, String custAddress, String custPhone, List<Order> orders) {
         this.custName = custName;
         this.custSource = custSource;
         this.custIndustry = custIndustry;
         this.custLevel = custLevel;
         this.custAddress = custAddress;
         this.custPhone = custPhone;
+        this.orders = orders;
     }
 
-    public Customer() {
+    public List<Order> getOrders() {
+        return orders;
+    }
+
+    public void setOrders(List<Order> orders) {
+        this.orders = orders;
     }
 
     @Override
@@ -106,6 +121,7 @@ public class Customer implements Serializable {
                 ", custLevel='" + custLevel + '\'' +
                 ", custAddress='" + custAddress + '\'' +
                 ", custPhone='" + custPhone + '\'' +
+                ", orders=" + orders +
                 '}';
     }
 }

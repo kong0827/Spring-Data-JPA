@@ -907,7 +907,9 @@
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
     <table id="228" parent="5" name="cst_customer"/>
-    <column id="229" parent="228" name="cust_id">
+    <table id="229" parent="5" name="cst_order"/>
+    <table id="230" parent="5" name="cst_product"/>
+    <column id="231" parent="228" name="cust_id">
       <Position>1</Position>
       <Comment>客户编号(主键)</Comment>
       <DataType>int(32)|0s</DataType>
@@ -915,45 +917,117 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="230" parent="228" name="cust_name">
+    <column id="232" parent="228" name="cust_name">
       <Position>2</Position>
       <Comment>客户名称(公司名称)</Comment>
       <DataType>varchar(32)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="231" parent="228" name="cust_source">
+    <column id="233" parent="228" name="cust_source">
       <Position>3</Position>
       <Comment>客户信息来源</Comment>
       <DataType>varchar(32)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="232" parent="228" name="cust_industry">
+    <column id="234" parent="228" name="cust_industry">
       <Position>4</Position>
       <Comment>客户所属行业</Comment>
       <DataType>varchar(32)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="233" parent="228" name="cust_level">
+    <column id="235" parent="228" name="cust_level">
       <Position>5</Position>
       <Comment>客户级别</Comment>
       <DataType>varchar(32)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="234" parent="228" name="cust_address">
+    <column id="236" parent="228" name="cust_address">
       <Position>6</Position>
       <Comment>客户联系地址</Comment>
       <DataType>varchar(128)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="235" parent="228" name="cust_phone">
+    <column id="237" parent="228" name="cust_phone">
       <Position>7</Position>
       <Comment>客户联系电话</Comment>
       <DataType>varchar(64)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="236" parent="228" name="PRIMARY">
+    <key id="238" parent="228" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>cust_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="239" parent="229" name="order_id">
+      <Position>1</Position>
+      <Comment>订单编号(主键)</Comment>
+      <DataType>int(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="240" parent="229" name="order_time">
+      <Position>2</Position>
+      <Comment>订单时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="241" parent="229" name="order_address">
+      <Position>3</Position>
+      <Comment>订单地址</Comment>
+      <DataType>varchar(128)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="242" parent="229" name="cust_id">
+      <Position>4</Position>
+      <Comment>客户Id</Comment>
+      <DataType>int(32)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="243" parent="229" name="fk_custmoer_order">
+      <ColNames>cust_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="244" parent="229" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>order_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="245" parent="229" name="fk_custmoer_order">
+      <ColNames>cust_id</ColNames>
+      <RefSchemaName>jpa</RefSchemaName>
+      <RefTableName>cst_customer</RefTableName>
+      <RefColNames>cust_id</RefColNames>
+    </foreign-key>
+    <column id="246" parent="230" name="pro_id">
+      <Position>1</Position>
+      <Comment>商品编号(主键)</Comment>
+      <DataType>int(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="247" parent="230" name="pro_price">
+      <Position>2</Position>
+      <Comment>商品时间</Comment>
+      <DataType>double|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="248" parent="230" name="pro_size">
+      <Position>3</Position>
+      <Comment>商品规格</Comment>
+      <DataType>varchar(128)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="249" parent="230" name="order_id">
+      <Position>4</Position>
+      <Comment>订单Id</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="250" parent="230" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>pro_id</ColNames>
       <Primary>1</Primary>
     </key>
   </database-model>

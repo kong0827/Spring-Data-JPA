@@ -34,7 +34,7 @@ public class TestCustomer {
     public void TestPage(){
 
         //设置查询条件
-        PageRequest pageable=new PageRequest(5,2, Sort.Direction.ASC,"custId");
+        PageRequest pageable=new PageRequest(0,5, Sort.Direction.ASC,"custId");
         Page<Customer> customers = customerDao.findAll(pageable);
         for (Customer customer:customers) {
             logger.info(customer.toString());
@@ -78,6 +78,18 @@ public class TestCustomer {
             logger.info(cust.toString());
         }
 
+    }
+
+    @Test
+    public void testDelete(){
+
+    }
+
+    @Test
+    public void TestSave(){
+        customer.setCustId(999);
+        Customer save = customerDao.save(customer);
+        logger.info(save.toString());
     }
 
 }
