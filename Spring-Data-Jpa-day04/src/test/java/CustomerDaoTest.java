@@ -8,6 +8,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -96,8 +97,12 @@ public class CustomerDaoTest {
     /**
      * getOne的用法
      *   需要在实体类上加@Proxy(lazy = false)注解
+     *   或者 在测试类上加上@Transactional
+     *
+     *   因为getOne实际em.getReference() 延迟加载
      */
     @Test
+    @Transactional
     public void findTest() {
         Customer one = customerDao.getOne(1L);
         System.out.println(one);

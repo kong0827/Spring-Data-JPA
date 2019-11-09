@@ -1,6 +1,4 @@
-package com.kxj.entity;
-
-/**
+package com.kxj.entity; /**
  * @author kxj
  * @date 2019/11/3 0:10
  * @Desc 客户实体类
@@ -21,7 +19,7 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "cst_customer")
-//@Proxy(lazy = false)
+@Proxy(lazy = false)
 public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -98,7 +96,7 @@ public class Customer {
 
     @Override
     public String toString() {
-        return "Customer{" +
+        return "com.kxj.entity.Customer{" +
                 "custId=" + custId +
                 ", custAddress='" + custAddress + '\'' +
                 ", custIndustry='" + custIndustry + '\'' +
