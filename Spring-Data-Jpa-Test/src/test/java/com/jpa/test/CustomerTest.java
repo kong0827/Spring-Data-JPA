@@ -33,7 +33,7 @@ public class CustomerTest {
      * 要求：
      *      1、findAll
      *      2、按照年龄排序
-     *      3、不可以自己先查询出所有结果集，然后在自己手动排序(研究下findAll方法)
+     *      3、不可以自己先查询出所有结果集
      */
     public void findAll() {
 
