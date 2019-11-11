@@ -68,19 +68,19 @@
 **计划单列技术点方向学习时间安排较少，主要时间放在项目中，这样有利于快速掌握技术及运用相关技术**
 
 * SpringDataJPA
-  * 时间：2019.10.28—2019.11.3 (一周)
+  * 时间：2019.10.28—2019.11.11 (两周) 
   * 资料：https://pan.baidu.com/s/1FkVWN5OzYRKvvNkTxQZFzw
   * 文档：[https://pan.baidu.com/s/1MMa90uPhVoWwX7MVutBLuQ](https://pan.baidu.com/s/1MMa90uPhVoWwX7MVutBLuQ)
   * 每天学习时长：一至两个小时
   * github仓库：git@github.com:kong0827/Spring-Data-JPA.git
+  * 辅助学习： http://www.querydsl.com/static/querydsl/4.1.3/reference/html_single/ 
 * SpringBoot
-  * 时间：2019.11.04—2019.11.17(两周，适课程内容适当调整)
-  * 资料：
-  * 文档：
-  * 每天学习时长：一至两个小时
-* github仓库：
+  *  时间：2019.11.12—2019.12.1(三周，适课程内容适当调整)
+  * 资料：https://pan.baidu.com/s/1SWGuZOA8BFcKSit62o-xIg
+  * 版本：SpringBoot 2.0版本 及以上(需GA版本，如和课程资料版本不一致，请修改) 
+  * 文档：同上github仓库：git@github.com:kong0827/SpringBoot.git
+  * 辅助资料：https://www.jianshu.com/p/9a08417e4e84 
   
-
   
 * 项目
   * 时间：待定

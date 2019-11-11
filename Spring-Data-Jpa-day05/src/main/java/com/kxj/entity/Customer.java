@@ -19,7 +19,6 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "cst_customer")
-@Proxy(lazy = false)
 public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

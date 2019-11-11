@@ -572,3 +572,54 @@ public class CustomerTest {
 </beans>
 ```
 
+
+
+#### JPQL查询
+
+spring data jpa 1.0 和2.0部分方法存在差异，因此在使用的时候需要注意，否则，1.0能够跑起来的程序，2.0版本是会报错的。这里的1.0版本和2.0版本分别值得是我测试的版本，分别为1.9。0，2.0版本为2.1.12.其他版本差异可以参考官方文档。
+
+例如：
+
+- **JPQL和SQL语句存在差异**
+
+  不可混用，否则报错
+
+  ```
+  sql  : update cst_customer set cust_name = ? where cust_id = ?
+  jpql : update Customer set custName = ? where custId = ?
+  ```
+
+- **方法名的差异：**
+
+​	springdatajpa：1.0版本 boolean exists(ID primaryKey)
+
+​	springdatajpa：2.0版本 boolean existsById(ID primaryKey)
+
+- **JPQL创建查询时：**
+
+​	springdatajpa：1.0版本  可以指定展位符的位置，也可以不指定
+
+```java
+@Query(value="from Customer where custName = ?")
+// 或@Query(value="from Customer where custName = ?")
+public Customer findJpql(String custName);
+```
+
+​	2.0版本中必须指定位置，否则程序运行会报错
+
+```java
+@Query(value="from Customer where custName = ?")
+public Customer findJpql(String custName);
+```
+
+​	同时2.0版本中  **Using named parameters**   也不再支持
+
+```java
+public interface UserRepository extends JpaRepository<User, Long> {
+
+  @Query("select u from User u where u.firstname = :firstname or u.lastname = :lastname")
+  User findByLastnameOrFirstname(@Param("lastname") String lastname,
+                                 @Param("firstname") String firstname);
+}
+```
+
