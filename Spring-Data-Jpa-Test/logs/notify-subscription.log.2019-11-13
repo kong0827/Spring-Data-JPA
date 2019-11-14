@@ -1,0 +1,518 @@
+2019-11-13 00:02:17,577 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-11-13 00:02:17,599 - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2019-11-13 00:02:17,602 - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@731a74c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@369f73a2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1f28c152, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7d907bac, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7791a895]
+2019-11-13 00:02:17,984 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-13 00:02:18,227 - Finished Spring Data repository scanning in 211ms. Found 1 repository interfaces.
+2019-11-13 00:02:18,939 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-13 00:02:19,096 - HHH000412: Hibernate Core {5.0.7.Final}
+2019-11-13 00:02:19,101 - HHH000206: hibernate.properties not found
+2019-11-13 00:02:19,104 - HHH000021: Bytecode provider name : javassist
+2019-11-13 00:02:19,193 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-11-13 00:02:19,689 - {dataSource-1} inited
+2019-11-13 00:02:19,965 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2019-11-13 00:02:20,008 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-11-13 00:02:20,775 - HV000001: Hibernate Validator 5.2.1.Final
+2019-11-13 00:02:21,286 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-13 00:02:22,043 - HHH000397: Using ASTQueryTranslatorFactory
+2019-11-13 00:02:23,258 - Customer{custId=428, custName='Bob', custSource='company', custIndustry='12', custLevel='1231', custAddress='China', custPhone='18656484512'}
+2019-11-13 00:02:23,259 - Customer{custId=429, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,259 - Customer{custId=430, custName='Jerry', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,260 - Customer{custId=431, custName='Bom', custSource='company', custIndustry='12', custLevel='1231', custAddress='Canada', custPhone='18656484512'}
+2019-11-13 00:02:23,261 - Customer{custId=432, custName='Bob', custSource='company', custIndustry='12', custLevel='1231', custAddress='China', custPhone='18656484512'}
+2019-11-13 00:02:23,261 - Customer{custId=436, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,262 - Customer{custId=437, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,263 - Customer{custId=438, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,263 - Customer{custId=439, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,264 - Customer{custId=440, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,265 - Customer{custId=441, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,266 - Customer{custId=442, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,266 - Customer{custId=445, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,267 - Customer{custId=446, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,268 - Customer{custId=447, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,268 - Customer{custId=448, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,270 - Customer{custId=449, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,270 - Customer{custId=450, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,271 - Customer{custId=451, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,272 - Customer{custId=452, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,272 - Customer{custId=453, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,273 - Customer{custId=454, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,278 - Customer{custId=455, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,279 - Customer{custId=456, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,279 - Customer{custId=457, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,280 - Customer{custId=458, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,281 - Customer{custId=459, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,282 - Customer{custId=460, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,283 - Customer{custId=461, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,284 - Customer{custId=462, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,285 - Customer{custId=463, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,286 - Customer{custId=464, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,287 - Customer{custId=465, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,288 - Customer{custId=466, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,289 - Customer{custId=467, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,290 - Customer{custId=468, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,291 - Customer{custId=469, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,291 - Customer{custId=470, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,292 - Customer{custId=471, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,293 - Customer{custId=472, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,294 - Customer{custId=473, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,295 - Customer{custId=474, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,295 - Customer{custId=475, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,296 - Customer{custId=476, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,297 - Customer{custId=477, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,298 - Customer{custId=478, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,299 - Customer{custId=479, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,299 - Customer{custId=480, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,300 - Customer{custId=481, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,301 - Customer{custId=482, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,303 - Customer{custId=483, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,304 - Customer{custId=484, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,304 - Customer{custId=485, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,305 - Customer{custId=486, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,306 - Customer{custId=487, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,307 - Customer{custId=488, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,308 - Customer{custId=489, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,308 - Customer{custId=490, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,309 - Customer{custId=491, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,310 - Customer{custId=492, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,311 - Customer{custId=493, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,312 - Customer{custId=494, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,313 - Customer{custId=495, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,314 - Customer{custId=496, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,314 - Customer{custId=497, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,315 - Customer{custId=498, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,316 - Customer{custId=499, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,317 - Customer{custId=500, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,317 - Customer{custId=501, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,318 - Customer{custId=502, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,321 - Customer{custId=503, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,321 - Customer{custId=504, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,322 - Customer{custId=505, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,323 - Customer{custId=506, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,324 - Customer{custId=507, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,325 - Customer{custId=508, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,325 - Customer{custId=509, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,326 - Customer{custId=510, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,327 - Customer{custId=511, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,327 - Customer{custId=512, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,328 - Customer{custId=513, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,329 - Customer{custId=514, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,330 - Customer{custId=515, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,331 - Customer{custId=516, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,332 - Customer{custId=517, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,333 - Customer{custId=518, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,333 - Customer{custId=519, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,334 - Customer{custId=520, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,335 - Customer{custId=521, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,336 - Customer{custId=522, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,337 - Customer{custId=523, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,337 - Customer{custId=524, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,337 - Customer{custId=525, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,337 - Customer{custId=526, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,338 - Customer{custId=527, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,339 - Customer{custId=528, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,339 - Customer{custId=529, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,341 - Customer{custId=530, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,341 - Customer{custId=531, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,342 - Customer{custId=532, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,342 - Customer{custId=533, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,343 - Customer{custId=534, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,343 - Customer{custId=535, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,344 - Customer{custId=536, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,346 - Customer{custId=537, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,347 - Customer{custId=538, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,348 - Customer{custId=539, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,349 - Customer{custId=540, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,349 - Customer{custId=541, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,350 - Customer{custId=542, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,351 - Customer{custId=543, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,352 - Customer{custId=544, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,353 - Customer{custId=545, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,354 - Customer{custId=546, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,355 - Customer{custId=547, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,356 - Customer{custId=548, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,356 - Customer{custId=549, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,357 - Customer{custId=550, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,358 - Customer{custId=551, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,358 - Customer{custId=552, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,359 - Customer{custId=553, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,360 - Customer{custId=554, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,361 - Customer{custId=555, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,361 - Customer{custId=556, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,363 - Customer{custId=557, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,364 - Customer{custId=558, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,364 - Customer{custId=559, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,364 - Customer{custId=560, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,364 - Customer{custId=561, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,364 - Customer{custId=562, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,365 - Customer{custId=563, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,365 - Customer{custId=564, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,365 - Customer{custId=565, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,365 - Customer{custId=566, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,365 - Customer{custId=567, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,365 - Customer{custId=568, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,366 - Customer{custId=569, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,366 - Customer{custId=570, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,366 - Customer{custId=571, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,368 - Customer{custId=572, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,369 - Customer{custId=573, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,369 - Customer{custId=574, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,369 - Customer{custId=575, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,370 - Customer{custId=576, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,370 - Customer{custId=577, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,370 - Customer{custId=578, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,371 - Customer{custId=579, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,377 - Customer{custId=580, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,377 - Customer{custId=581, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,377 - Customer{custId=582, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,378 - Customer{custId=583, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,378 - Customer{custId=584, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,378 - Customer{custId=585, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,378 - Customer{custId=586, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,378 - Customer{custId=587, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,378 - Customer{custId=588, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,378 - Customer{custId=589, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,379 - Customer{custId=590, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,379 - Customer{custId=591, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,379 - Customer{custId=592, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,379 - Customer{custId=593, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,379 - Customer{custId=594, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,379 - Customer{custId=595, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,379 - Customer{custId=596, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,379 - Customer{custId=597, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,379 - Customer{custId=598, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,380 - Customer{custId=599, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,380 - Customer{custId=600, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,380 - Customer{custId=601, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,395 - Customer{custId=602, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,396 - Customer{custId=603, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,396 - Customer{custId=604, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,396 - Customer{custId=605, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,396 - Customer{custId=606, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,396 - Customer{custId=607, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,396 - Customer{custId=608, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,396 - Customer{custId=609, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,397 - Customer{custId=610, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,397 - Customer{custId=611, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,397 - Customer{custId=612, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,397 - Customer{custId=613, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,397 - Customer{custId=614, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,397 - Customer{custId=615, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,397 - Customer{custId=616, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,398 - Customer{custId=617, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,398 - Customer{custId=618, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,398 - Customer{custId=619, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,398 - Customer{custId=620, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,398 - Customer{custId=621, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,398 - Customer{custId=622, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,398 - Customer{custId=623, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,398 - Customer{custId=624, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,413 - Customer{custId=625, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,413 - Customer{custId=626, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,413 - Customer{custId=627, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,413 - Customer{custId=628, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,413 - Customer{custId=629, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,414 - Customer{custId=630, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,414 - Customer{custId=631, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,414 - Customer{custId=632, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,414 - Customer{custId=633, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,414 - Customer{custId=634, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,414 - Customer{custId=635, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,414 - Customer{custId=636, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,414 - Customer{custId=637, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,415 - Customer{custId=638, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,415 - Customer{custId=639, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,415 - Customer{custId=640, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,415 - Customer{custId=641, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,415 - Customer{custId=642, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,415 - Customer{custId=643, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,415 - Customer{custId=644, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,415 - Customer{custId=645, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,416 - Customer{custId=646, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,428 - Customer{custId=647, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,429 - Customer{custId=648, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,430 - Customer{custId=649, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,431 - Customer{custId=650, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:02:23,454 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-13 00:02:23,465 - {dataSource-1} closed
+2019-11-13 00:06:37,058 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-11-13 00:06:37,080 - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2019-11-13 00:06:37,084 - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@731a74c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@369f73a2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1f28c152, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7d907bac, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7791a895]
+2019-11-13 00:06:37,495 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-13 00:06:37,731 - Finished Spring Data repository scanning in 204ms. Found 1 repository interfaces.
+2019-11-13 00:06:38,399 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-13 00:06:38,597 - HHH000412: Hibernate Core {5.0.7.Final}
+2019-11-13 00:06:38,600 - HHH000206: hibernate.properties not found
+2019-11-13 00:06:38,603 - HHH000021: Bytecode provider name : javassist
+2019-11-13 00:06:38,683 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-11-13 00:06:39,132 - {dataSource-1} inited
+2019-11-13 00:06:39,484 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2019-11-13 00:06:39,634 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-11-13 00:06:41,954 - HV000001: Hibernate Validator 5.2.1.Final
+2019-11-13 00:06:43,000 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-13 00:06:44,105 - HHH000397: Using ASTQueryTranslatorFactory
+2019-11-13 00:06:44,636 - Customer{custId=650, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,636 - Customer{custId=649, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,637 - Customer{custId=648, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,637 - Customer{custId=647, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,637 - Customer{custId=646, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,637 - Customer{custId=645, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,637 - Customer{custId=644, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,637 - Customer{custId=643, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,638 - Customer{custId=642, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,638 - Customer{custId=641, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,638 - Customer{custId=640, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,638 - Customer{custId=639, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,638 - Customer{custId=638, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,638 - Customer{custId=637, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,638 - Customer{custId=636, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,639 - Customer{custId=635, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,639 - Customer{custId=634, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,639 - Customer{custId=633, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,639 - Customer{custId=632, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,639 - Customer{custId=631, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,639 - Customer{custId=630, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,640 - Customer{custId=629, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,640 - Customer{custId=628, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,640 - Customer{custId=627, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,640 - Customer{custId=626, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,640 - Customer{custId=625, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,640 - Customer{custId=624, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,641 - Customer{custId=623, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,641 - Customer{custId=622, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,641 - Customer{custId=621, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,641 - Customer{custId=620, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,641 - Customer{custId=619, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,641 - Customer{custId=618, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,642 - Customer{custId=617, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,642 - Customer{custId=616, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,642 - Customer{custId=615, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,642 - Customer{custId=614, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,642 - Customer{custId=613, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,642 - Customer{custId=612, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,642 - Customer{custId=611, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,658 - Customer{custId=610, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,659 - Customer{custId=609, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,664 - Customer{custId=608, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,664 - Customer{custId=607, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,665 - Customer{custId=606, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,665 - Customer{custId=605, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,666 - Customer{custId=604, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,666 - Customer{custId=603, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,668 - Customer{custId=602, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,669 - Customer{custId=601, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,669 - Customer{custId=600, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,669 - Customer{custId=599, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,669 - Customer{custId=598, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,673 - Customer{custId=597, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,673 - Customer{custId=596, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,673 - Customer{custId=595, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,673 - Customer{custId=594, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,673 - Customer{custId=593, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,673 - Customer{custId=592, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,674 - Customer{custId=591, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,674 - Customer{custId=590, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,674 - Customer{custId=589, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,674 - Customer{custId=588, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,683 - Customer{custId=587, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,683 - Customer{custId=586, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,683 - Customer{custId=585, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,683 - Customer{custId=584, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,683 - Customer{custId=583, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,683 - Customer{custId=582, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,683 - Customer{custId=581, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,683 - Customer{custId=580, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,684 - Customer{custId=579, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,684 - Customer{custId=578, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,684 - Customer{custId=577, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,684 - Customer{custId=576, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,684 - Customer{custId=575, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,684 - Customer{custId=574, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,684 - Customer{custId=573, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,684 - Customer{custId=572, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,684 - Customer{custId=571, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,684 - Customer{custId=570, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,685 - Customer{custId=569, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,685 - Customer{custId=568, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,685 - Customer{custId=567, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,685 - Customer{custId=566, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,685 - Customer{custId=565, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,689 - Customer{custId=564, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,689 - Customer{custId=563, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,689 - Customer{custId=562, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,689 - Customer{custId=561, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,689 - Customer{custId=560, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,689 - Customer{custId=559, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,689 - Customer{custId=558, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,690 - Customer{custId=557, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,690 - Customer{custId=556, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,690 - Customer{custId=555, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,690 - Customer{custId=554, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,690 - Customer{custId=553, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,691 - Customer{custId=552, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,691 - Customer{custId=551, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,691 - Customer{custId=550, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,691 - Customer{custId=549, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,692 - Customer{custId=548, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,692 - Customer{custId=547, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,692 - Customer{custId=546, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,692 - Customer{custId=545, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,692 - Customer{custId=544, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,692 - Customer{custId=543, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,692 - Customer{custId=542, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,693 - Customer{custId=541, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,693 - Customer{custId=540, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,695 - Customer{custId=539, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,695 - Customer{custId=538, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,695 - Customer{custId=537, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,695 - Customer{custId=536, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,695 - Customer{custId=535, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,695 - Customer{custId=534, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,695 - Customer{custId=533, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,695 - Customer{custId=532, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,695 - Customer{custId=531, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,696 - Customer{custId=530, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,696 - Customer{custId=529, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,696 - Customer{custId=528, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,696 - Customer{custId=527, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,696 - Customer{custId=526, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,696 - Customer{custId=525, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,696 - Customer{custId=524, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,696 - Customer{custId=523, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,696 - Customer{custId=522, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,696 - Customer{custId=521, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,697 - Customer{custId=520, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,697 - Customer{custId=519, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,697 - Customer{custId=518, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,699 - Customer{custId=517, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,699 - Customer{custId=516, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,699 - Customer{custId=515, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,699 - Customer{custId=514, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,699 - Customer{custId=513, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,699 - Customer{custId=512, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,699 - Customer{custId=511, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,699 - Customer{custId=510, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,700 - Customer{custId=509, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,700 - Customer{custId=508, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,700 - Customer{custId=507, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,700 - Customer{custId=506, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,700 - Customer{custId=505, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,700 - Customer{custId=504, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,700 - Customer{custId=503, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,700 - Customer{custId=502, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,700 - Customer{custId=501, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,700 - Customer{custId=500, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,700 - Customer{custId=499, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,701 - Customer{custId=498, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,701 - Customer{custId=497, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,701 - Customer{custId=496, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,701 - Customer{custId=495, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,701 - Customer{custId=494, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,701 - Customer{custId=493, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,701 - Customer{custId=492, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,701 - Customer{custId=491, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,703 - Customer{custId=490, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,703 - Customer{custId=489, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,703 - Customer{custId=488, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,704 - Customer{custId=487, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,704 - Customer{custId=486, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,704 - Customer{custId=485, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,704 - Customer{custId=484, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,704 - Customer{custId=483, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,704 - Customer{custId=482, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,704 - Customer{custId=481, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,705 - Customer{custId=480, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,705 - Customer{custId=479, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,705 - Customer{custId=478, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,705 - Customer{custId=477, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,705 - Customer{custId=476, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,705 - Customer{custId=475, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,705 - Customer{custId=474, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,705 - Customer{custId=473, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,705 - Customer{custId=472, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,705 - Customer{custId=471, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,706 - Customer{custId=470, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,706 - Customer{custId=469, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,706 - Customer{custId=468, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,706 - Customer{custId=467, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,706 - Customer{custId=466, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,706 - Customer{custId=465, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,714 - Customer{custId=464, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,714 - Customer{custId=463, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,714 - Customer{custId=462, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,714 - Customer{custId=461, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,714 - Customer{custId=460, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,714 - Customer{custId=459, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,714 - Customer{custId=458, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,714 - Customer{custId=457, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,714 - Customer{custId=456, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,714 - Customer{custId=455, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,715 - Customer{custId=454, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,715 - Customer{custId=453, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,715 - Customer{custId=452, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,715 - Customer{custId=451, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,715 - Customer{custId=450, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,715 - Customer{custId=449, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,715 - Customer{custId=448, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,715 - Customer{custId=447, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,715 - Customer{custId=446, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,715 - Customer{custId=445, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,715 - Customer{custId=442, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,715 - Customer{custId=441, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,715 - Customer{custId=440, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,715 - Customer{custId=439, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,716 - Customer{custId=438, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,716 - Customer{custId=437, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,716 - Customer{custId=436, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,716 - Customer{custId=432, custName='Bob', custSource='company', custIndustry='12', custLevel='1231', custAddress='China', custPhone='18656484512'}
+2019-11-13 00:06:44,716 - Customer{custId=431, custName='Bom', custSource='company', custIndustry='12', custLevel='1231', custAddress='Canada', custPhone='18656484512'}
+2019-11-13 00:06:44,716 - Customer{custId=430, custName='Jerry', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,716 - Customer{custId=429, custName='Tom', custSource='company', custIndustry='12', custLevel='1231', custAddress='498', custPhone='18656484512'}
+2019-11-13 00:06:44,716 - Customer{custId=428, custName='Bob', custSource='company', custIndustry='12', custLevel='1231', custAddress='China', custPhone='18656484512'}
+2019-11-13 00:06:44,771 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-13 00:06:44,781 - {dataSource-1} closed
+2019-11-13 00:16:05,355 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-11-13 00:16:05,373 - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2019-11-13 00:16:05,377 - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@887af79, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@7fac631b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5b87ed94, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6e0e048a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5bc79255]
+2019-11-13 00:16:05,761 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-13 00:16:06,023 - Finished Spring Data repository scanning in 222ms. Found 1 repository interfaces.
+2019-11-13 00:16:06,762 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-13 00:16:06,977 - HHH000412: Hibernate Core {5.0.7.Final}
+2019-11-13 00:16:06,980 - HHH000206: hibernate.properties not found
+2019-11-13 00:16:06,982 - HHH000021: Bytecode provider name : javassist
+2019-11-13 00:16:07,070 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-11-13 00:16:07,589 - {dataSource-1} inited
+2019-11-13 00:16:07,941 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2019-11-13 00:16:07,993 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-11-13 00:16:08,809 - HV000001: Hibernate Validator 5.2.1.Final
+2019-11-13 00:16:09,346 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-13 00:16:09,963 - Began transaction (1) for test context [DefaultTestContext@5d01ea21 testClass = CustomerTest, testInstance = com.jpa.test.CustomerTest@70211e49, testMethod = updateNameByIdTest@CustomerTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@468be356 testClass = CustomerTest, locations = '{classpath:applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@62ddd21b]; rollback [true]
+2019-11-13 00:16:10,176 - Rolled back transaction for test context [DefaultTestContext@5d01ea21 testClass = CustomerTest, testInstance = com.jpa.test.CustomerTest@70211e49, testMethod = updateNameByIdTest@CustomerTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@468be356 testClass = CustomerTest, locations = '{classpath:applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2019-11-13 00:16:10,186 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-13 00:16:10,191 - {dataSource-1} closed
+2019-11-13 00:16:35,408 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-11-13 00:16:35,435 - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2019-11-13 00:16:35,443 - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@887af79, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@7fac631b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5b87ed94, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6e0e048a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5bc79255]
+2019-11-13 00:16:36,058 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-13 00:16:36,384 - Finished Spring Data repository scanning in 283ms. Found 1 repository interfaces.
+2019-11-13 00:16:37,150 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-13 00:16:37,453 - HHH000412: Hibernate Core {5.0.7.Final}
+2019-11-13 00:16:37,456 - HHH000206: hibernate.properties not found
+2019-11-13 00:16:37,460 - HHH000021: Bytecode provider name : javassist
+2019-11-13 00:16:37,566 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-11-13 00:16:38,098 - {dataSource-1} inited
+2019-11-13 00:16:38,411 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2019-11-13 00:16:38,458 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-11-13 00:16:39,200 - HV000001: Hibernate Validator 5.2.1.Final
+2019-11-13 00:16:39,641 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-13 00:16:40,263 - Began transaction (1) for test context [DefaultTestContext@5d01ea21 testClass = CustomerTest, testInstance = com.jpa.test.CustomerTest@70211e49, testMethod = updateNameByIdTest@CustomerTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@468be356 testClass = CustomerTest, locations = '{classpath:applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@62ddd21b]; rollback [true]
+2019-11-13 00:16:40,350 - Rolled back transaction for test context [DefaultTestContext@5d01ea21 testClass = CustomerTest, testInstance = com.jpa.test.CustomerTest@70211e49, testMethod = updateNameByIdTest@CustomerTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@468be356 testClass = CustomerTest, locations = '{classpath:applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2019-11-13 00:16:40,354 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-13 00:16:40,359 - {dataSource-1} closed

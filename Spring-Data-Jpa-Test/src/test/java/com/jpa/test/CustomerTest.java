@@ -12,6 +12,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.*;
 import java.util.List;
 import java.util.Optional;
 
@@ -37,6 +38,10 @@ public class CustomerTest {
     @Autowired
     private CustomerDao customerDao;
 
+    @PersistenceContext
+
+    private EntityManager entityManager;
+
     /**
      * 根据用户id 查找用户
      * 要求：
@@ -54,6 +59,7 @@ public class CustomerTest {
     }
 
     @Test
+    @Transactional
     public void getOneCustomer() {
         //getOne()方法总是报错，说是需要在配置文件中添加配置，但是网上的配置都是基于SpringBoot的，Spring的配置尝试失败了
         Customer customer = customerDao.getOne(440);
@@ -72,8 +78,7 @@ public class CustomerTest {
 
         List<Customer> customers = customerDao.findAll();
 
-        for (Customer customer:customers
-             ) {
+        for (Customer customer:customers) {
             logger.info(customer.toString());
         }
     }
@@ -85,8 +90,7 @@ public class CustomerTest {
         Sort sort=new Sort(Sort.Direction.DESC,"custId");
         List<Customer> customers = customerDao.findAll(sort);
 
-        for (Customer customer:customers
-        ) {
+        for (Customer customer:customers) {
             logger.info(customer.toString());
         }
     }
@@ -100,9 +104,18 @@ public class CustomerTest {
      *      2）Declare query at the query method using @Query
      *      3）Declare a native query at the query method using @Query
      */
+
+    @Test
     public void jpqlTest() {
 
+        //List<Customer> customers = entityManager.createQuery("select custName from Customer").getResultList();
 
+        List<Customer> allCustomers = customerDao.findAllCustomer();
+        Customer bOb = customerDao.findCustomer("BOb");
+        logger.info("测试数据："+bOb.toString());
+        for (Customer customer:allCustomers) {
+            logger.info(customer.toString());
+        }
     }
 
     
@@ -116,9 +129,18 @@ public class CustomerTest {
     //关于配置事务，只是在测试类和测试方法上添加了事务配置，具体作用不明。
     public void updateNameByIdTest() {
         Customer customer=new Customer();
-        customer.setCustId(440);
-        customer.setCustName("没得感情");
-        customerDao.save(customer);
+        EntityTransaction transaction = entityManager.getTransaction();
+        try {
+            transaction.begin();
+            customer.setCustId(440);
+            customer.setCustName("没得感情");
+            customerDao.save(customer);
+            transaction.commit();
+        } catch (Exception e) {
+            transaction.rollback();
+        } finally {
+            entityManager.close();
+        }
     }
 
 }
