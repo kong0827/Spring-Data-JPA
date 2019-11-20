@@ -623,3 +623,33 @@ public interface UserRepository extends JpaRepository<User, Long> {
 }
 ```
 
+
+
+
+
+
+
+
+
+##### 提升
+
+1. Spring Data Jpa @Query注解解析对象(使用SPEL)
+
+   ```java
+   @Query(value = "from ProduceRecord where VIN like concat('%',?#{#produceRecord.VIN}, '%') " +
+               "and (?#{#produceRecord.equipmentType} IS NULL or equipmentType = ?#{#produceRecord.equipmentType})"+
+               "and (:startDate IS NULL or writeTime >= :startDate)"+
+               "and (:endDate IS NULL or writeTime <= :endDate)"+
+               "and (?#{#produceRecord.workshop} IS NULL or workshop = ?#{#produceRecord.workshop})"+
+               "and (?#{#produceRecord.equipmentIP} IS NULL or equipmentIP = ?#{#produceRecord.equipmentIP})"
+       )
+       public List<ProduceRecord> findProduceRecordList(@Param("produceRecord") ProduceRecord produceRecord,@Param("startDate") Date startDate,@Param("endDate") Date endDate,@Param("pagebale") Pageable pagebale);
+   
+   ```
+
+   - **传入Pageable对象会自动解析**
+   - **and（字段值 is null or 字段属性=字段值）**根据字段是否存在添加and 条件
+   - **?#{#Object.property}**  获得对象参数
+
+   
+
