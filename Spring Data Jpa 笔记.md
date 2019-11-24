@@ -759,7 +759,7 @@ JPQL全称**Java Persistence Query Language**
 			String jpql = "from Customer where custName like ? ";
 			Query query = em.createQuery(jpql);
 			//对占位符赋值，从1开始
-			query.setParameter(1, "传智播客%");
+			query.setParameter(1, "播客%");
 			//查询并得到返回结果
 			Object object = query.getSingleResult(); //得到唯一的结果集对象
 			System.out.println(object);
@@ -1002,7 +1002,7 @@ public class CustomerDaoTest {
     @Test
     public void testSave() {
         Customer c = new Customer();
-        c.setCustName("传智播客");
+        c.setCustName("播客");
         customerDao.save(c);
     }
     
@@ -1017,7 +1017,7 @@ public class CustomerDaoTest {
         //根据id查询id为1的客户
         Customer customer = customerDao.findOne(1l);
         //修改客户名称
-        customer.setCustName("传智播客顺义校区");
+        customer.setCustName("播客顺义校区");
         //更新
         customerDao.save(customer);
     }
@@ -1312,7 +1312,7 @@ public void testSpecifications() {
         public Predicate toPredicate(Root<Customer> root, CriteriaQuery<?> query, CriteriaBuilder cb) {
             //cb:构建查询，添加查询方式   like：模糊匹配
             //root：从实体Customer对象中按照custName属性进行查询
-            return cb.like(root.get("custName").as(String.class), "传智播客%");
+            return cb.like(root.get("custName").as(String.class), "播客%");
         }
     };
     Customer customer = customerDao.findOne(spec);
@@ -1320,7 +1320,201 @@ public void testSpecifications() {
 }
 ```
 
-#### **基于Specifications的分页查询**
+#### **Specifications的多条件查询**
+
+```java
+package com.kxj.test;
+
+import com.kxj.dao.CustomerDao;
+import com.kxj.entity.Customer;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.*;
+import org.springframework.data.jpa.domain.Specification;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import javax.persistence.criteria.*;
+import java.util.List;
+import java.util.Optional;
+
+/**
+ * @author kxj
+ * @date 2019/11/11 22:33
+ * @Desc 动态查询
+ */
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(locations = "classpath:applicationContext.xml")
+public class CustomerTest {
+
+    @Autowired
+    private CustomerDao customerDao;
+
+    /**
+     * 根据条件 查询对象
+     */
+    @Test
+    public void testSpec() {
+        /**
+         * 匿名内部类
+         *      1、实现Specification接口(提供泛型，查询的对象类型)
+         *      2、实现toPredicate方法
+         *      3、需要借助方法参数中的两个参数
+         *          root：获取需要查询的对象属性
+         *          CriteraBuilder:构造查询条件的，内部封账了很多的查询条件(模糊查询，精准匹配)
+         *
+         *
+         * 案例：根据客户名称查询
+         *      1、查询方式
+         *          criteriaBuilder对象
+         *      2、比较的属性名称
+         *          root对象
+         */
+        Specification<Customer> specification = new Specification<Customer>() {
+            @Override
+            public Predicate toPredicate(Root<Customer> root, CriteriaQuery<?> criteriaQuery, CriteriaBuilder criteriaBuilder) {
+                //1、获取比较的属性
+                Path<Object> custName = root.get("custName");
+                //2、构造查询条件
+                /**
+                 * 第一个参数： 需要比较的比象(path对象)
+                 * 第二个参数：当前需要比较的取值
+                 */
+                Predicate predicate = criteriaBuilder.equal(custName, "奥巴马");
+                return predicate;
+            }
+        };
+        Optional<Customer> customerOptional = customerDao.findOne(specification);
+        if (customerOptional.isPresent()) {
+            Customer customer = customerOptional.get();
+            System.out.println(customer);
+        }
+    }
+
+    /**
+     * 多条件 查询对象
+     */
+    @Test
+    public void testSpec2() {
+        Specification<Customer> specification = new Specification<Customer>() {
+            @Override
+            public Predicate toPredicate(Root<Customer> root, CriteriaQuery<?> criteriaQuery, CriteriaBuilder criteriaBuilder) {
+                //1、获取比较的属性
+                Path<Object> custName = root.get("custName");
+                Path<Object> custIndustry = root.get("custIndustry");
+                //2、构造查询条件
+                /**
+                 * 第一个参数： 需要比较的比象(path对象)
+                 * 第二个参数：当前需要比较的取值
+                 */
+                Predicate p1 = criteriaBuilder.equal(custName, "奥巴马");
+                Predicate p2 = criteriaBuilder.equal(custIndustry, "服务业");
+
+                // 将多个查询条件组合在一起(and,or)
+                Predicate predicate = criteriaBuilder.and(p1, p2);
+                return predicate;
+            }
+        };
+        Optional<Customer> customerOptional = customerDao.findOne(specification);
+        if (customerOptional.isPresent()) {
+            Customer customer = customerOptional.get();
+            System.out.println(customer);
+        }
+    }
+
+    /**
+     * 模糊匹配 查询对象
+     *  equal:直接得到path对象（属性），然后进行比较即可
+     *  gt,lt,ge,,le,like:得到path对象，根据path指定的参数类型，在去比较即可
+     *      指定参数类型：path.as(类型的字节码对象)
+     */
+    @Test
+    public void testSpec3() {
+        Specification<Customer> specification = new Specification<Customer>() {
+            @Override
+            public Predicate toPredicate(Root<Customer> root, CriteriaQuery<?> criteriaQuery, CriteriaBuilder criteriaBuilder) {
+                //1、获取比较的属性
+                Path<Object> custName = root.get("custName");
+                //2、构造查询条件
+                /**
+                 * 第一个参数： 需要比较的比象(path对象)
+                 * 第二个参数：当前需要比较的取值
+                 */
+                Predicate predicate = criteriaBuilder.like(custName.as(String.class),"%奥巴马%");
+
+                // 将多个查询条件组合在一起(and,or)
+                return predicate;
+            }
+        };
+        List<Customer> customers = customerDao.findAll(specification);
+        for (Customer customer : customers) {
+            System.out.println(customer);
+        }
+    }
+
+    @Test
+    public void testSpec4() {
+        Specification<Customer> specification = new Specification<Customer>() {
+            @Override
+            public Predicate toPredicate(Root<Customer> root, CriteriaQuery<?> criteriaQuery, CriteriaBuilder criteriaBuilder) {
+                Path<Object> custName = root.get("custName");
+                Predicate predicate = criteriaBuilder.like(custName.as(String.class),"%奥巴马%");
+                return predicate;
+            }
+        };
+
+        Sort sort = new Sort(Sort.Direction.DESC, "custLevel");
+        List<Customer> customers = customerDao.findAll(specification, sort);
+        for (Customer customer : customers) {
+            System.out.println(customer);
+        }
+    }
+
+    /**
+     * 分页查询
+     *
+     *      Specification: 查询条件
+     *      Pageable:分页参数
+     *          分页参数： 查询的页码， ，每页查询的条件
+     *          findAll(Specification, Pageable) 带有条件的分页
+     *          findAll(Pageable)：没有条件的分页
+     *
+     *
+     */
+    @Test
+    public void testSpec5() {
+
+        Specification specification = null;
+        /**
+         * PageReuqest对象是Pageable接口的实现类
+         *
+         * 创建PageRequest的过程中，需要调用它的构造方法传入两个参数
+         *  第一个参数：当前查询的页数（从0开始）
+         *  第二个参数：每页查询的数量
+         *
+         *  直接new PageRequest已经过时，PageRequest.of取代
+         */
+        Pageable pageRequest = PageRequest.of(0, 2);
+
+        // 分页查询
+        Page<Customer> customers = customerDao.findAll((Specification<Customer>) null, pageRequest);
+        for (Customer customer : customers) {
+            System.out.println(customer);
+        }
+
+        System.out.println("总条数 "+customers.getTotalElements());
+        System.out.println("集合列表 "+customers.getContent());
+        System.out.println("总页数 "+customers.getTotalPages());
+
+    }
+
+}
+```
+
+
+
+#### 基于Specifications的分页查询**
 
 ```java
     @Test
@@ -1328,7 +1522,7 @@ public void testSpecifications() {
 		//构造查询条件
 		Specification<Customer> spec = new Specification<Customer>() {
 			public Predicate toPredicate(Root<Customer> root, CriteriaQuery<?> query, CriteriaBuilder cb) {
-				return cb.like(root.get("custName").as(String.class), "传智%");
+				return cb.like(root.get("custName").as(String.class), "%");
 			}
 		};
 		
@@ -1945,7 +2139,7 @@ private Set<LinkMan> linkMans = new HashSet<>(0);
 				//创建的过程中，第一个参数为关联对象的属性名称，第二个参数为连接查询的方式（left，inner，right）
 				//JoinType.LEFT : 左外连接,JoinType.INNER：内连接,JoinType.RIGHT：右外连接
 				Join<LinkMan, Customer> join = root.join("customer",JoinType.INNER);
-				return cb.like(join.get("custName").as(String.class),"传智播客1");
+				return cb.like(join.get("custName").as(String.class),"播客1");
 			}
 		};
 		List<LinkMan> list = linkManDao.findAll(spec);
