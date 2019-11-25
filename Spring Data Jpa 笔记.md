@@ -2251,3 +2251,40 @@ nullable 未生效
 
 
 
+**Specification**
+
+```java
+ public Page<TransferRecord> findTransferRecords(Date pushStartTime, Date pushEndTime, String partNameNo, String equipmentIP, Integer isSuccess, Integer page, Integer pageSize) {
+        Specification<TransferRecord> specification = new Specification<TransferRecord>() {
+            @Override
+            public Predicate toPredicate(Root<TransferRecord> root, CriteriaQuery<?> criteriaQuery, CriteriaBuilder cb) {
+                List<Predicate> predicates = new ArrayList<>();
+
+                if (pushStartTime != null) {
+                    predicates.add(cb.greaterThanOrEqualTo(root.<Date>get("pushTime"), pushStartTime));
+                }
+                if (pushEndTime != null) {
+                    predicates.add(cb.lessThanOrEqualTo(root.<Date>get("pushTime"), pushEndTime));
+                }
+                if (partNameNo != null) {
+                    predicates.add(cb.like(root.get("partSoftNo"), "%" + partNameNo + "%"));
+                }
+                if (equipmentIP != null) {
+                    predicates.add(cb.like(root.get("equipmentIP"), "%" + equipmentIP + "%"));
+                }
+                if (isSuccess != null) {
+                    predicates.add(cb.equal(root.get("isSuccess"), isSuccess));
+                }
+                return cb.and(predicates.toArray(new Predicate[predicates.size()]));
+            }
+        };
+        Sort sort = new Sort(Sort.Direction.DESC, "id");
+        Pageable pageable = PageRequest.of(page, pageSize, sort);
+        return transferRecordDao.findAll(specification, pageable);
+
+    }
+
+```
+
+
+

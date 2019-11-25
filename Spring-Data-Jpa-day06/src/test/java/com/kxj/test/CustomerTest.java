@@ -84,6 +84,7 @@ public class CustomerTest {
                  * 第二个参数：当前需要比较的取值
                  */
                 Predicate p1 = criteriaBuilder.equal(custName, "奥巴马");
+                System.out.println(p1);
                 Predicate p2 = criteriaBuilder.equal(custIndustry, "服务业");
 
                 // 将多个查询条件组合在一起(and,or)
