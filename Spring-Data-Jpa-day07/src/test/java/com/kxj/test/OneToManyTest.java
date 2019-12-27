@@ -12,6 +12,8 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.Temporal;
+import java.util.List;
 import java.util.Optional;
 
 /**
@@ -30,10 +32,10 @@ public class OneToManyTest {
 
     /**
      * 保存一个客户，保存一个联系人
-     *  效果：客户和联系人作为独立的数据保存到数据库中
-     *      联系人的外键为空
-     *  原因？
-     *      实体类中没有配置关系
+     * 效果：客户和联系人作为独立的数据保存到数据库中
+     * 联系人的外键为空
+     * 原因？
+     * 实体类中没有配置关系
      */
     @Test
     @Transactional //配置事务
@@ -57,6 +59,14 @@ public class OneToManyTest {
 
         customerDao.save(customer);
         linkManDao.save(linkMan);
+    }
+
+    @Test
+    public void test() {
+        List<LinkMan> all = linkManDao.findAll();
+        for (LinkMan linkMan : all) {
+            System.out.println(linkMan);
+        }
     }
 
     @Test
@@ -85,9 +95,8 @@ public class OneToManyTest {
 
     /**
      * 会有一条多余的update语句
-     *      * 由于一的一方可以维护外键：会发送update语句
-     *      * 解决此问题：只需要在一的一方放弃维护权即可
-     *
+     * * 由于一的一方可以维护外键：会发送update语句
+     * * 解决此问题：只需要在一的一方放弃维护权即可
      */
     @Test
     @Transactional //配置事务
@@ -110,7 +119,6 @@ public class OneToManyTest {
 
     /**
      * 级联添加
-     *
      */
     @Test
     @Transactional //配置事务
@@ -132,7 +140,6 @@ public class OneToManyTest {
 
     /**
      * 级联删除
-     *
      */
     @Test
     @Transactional //配置事务
@@ -141,7 +148,7 @@ public class OneToManyTest {
         Customer customer = null;
         Optional<Customer> customerOptional = customerDao.findById(1L);
         if (customerOptional.isPresent()) {
-           customer = customerOptional.get();
+            customer = customerOptional.get();
         }
         customerDao.delete(customer);
     }

@@ -10,11 +10,11 @@ import java.util.List;
 
 /**
  * 符合SpringDataJpa的dao层接口规范
- *      JpaRepository<操作的实体类类型，实体类中主键属性的类型>
- *          * 封装了基本CRUD操作
- *      JpaSpecificationExecutor<操作的实体类类型>
- *          * 封装了复杂查询（分页）
+ * JpaRepository<操作的实体类类型，实体类中主键属性的类型>
+ * * 封装了基本CRUD操作
+ * JpaSpecificationExecutor<操作的实体类类型>
+ * * 封装了复杂查询（分页）
  */
-public interface CustomerDao extends JpaRepository<Customer,Long> ,JpaSpecificationExecutor<Customer> {
+public interface CustomerDao extends JpaRepository<Customer, Long>, JpaSpecificationExecutor<Customer> {
 
 }

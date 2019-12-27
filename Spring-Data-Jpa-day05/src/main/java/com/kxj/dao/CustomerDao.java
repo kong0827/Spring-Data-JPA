@@ -52,11 +52,11 @@ public interface CustomerDao extends JpaRepository<Customer, Long>, JpaSpecifica
 
     /**
      * Declare a native query at the query method using @Query
-     *
+     * <p>
      * 查询用户
      * nativeQuery： 查询方式
-     *       true ： sql查询
-     *       false：jpql查询
+     * true ： sql查询
+     * false：jpql查询
      */
     @Query(value = "select * from cst_customer where cust_name = ?1", nativeQuery = true)
     public Customer findCustomerByCustNameBySQL(String custName);
@@ -64,6 +64,7 @@ public interface CustomerDao extends JpaRepository<Customer, Long>, JpaSpecifica
 
     /**
      * 模糊查询
+     *
      * @param name
      * @return
      */
@@ -71,6 +72,7 @@ public interface CustomerDao extends JpaRepository<Customer, Long>, JpaSpecifica
 
     /**
      * 模糊查询
+     *
      * @param name
      * @return
      */

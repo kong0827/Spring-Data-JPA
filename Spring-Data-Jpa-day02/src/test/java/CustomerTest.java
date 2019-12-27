@@ -9,7 +9,7 @@ import javax.persistence.Id;
 /**
  * @author kxj
  * @date 2019/10/30 22:38
- * @Desc  客户的增删改查
+ * @Desc 客户的增删改查
  */
 public class CustomerTest {
 

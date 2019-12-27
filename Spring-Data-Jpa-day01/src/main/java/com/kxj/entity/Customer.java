@@ -10,15 +10,15 @@ import javax.persistence.*;
 
 /**
  * 配置实体类与数据库的映射关系
+ *
  * @Entity 声明实体类
  * @Table 建立实体类和表的映射关系
  * @Id 声明主键
  * @GeneratedValue 主键的生成策略
  * @Column 指定和表中字段的映射关系
- *
  */
 @Entity
-@Table(name="cst_customer")
+@Table(name = "cst_customer")
 public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

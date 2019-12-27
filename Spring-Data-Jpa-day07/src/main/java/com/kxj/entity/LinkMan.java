@@ -27,17 +27,17 @@ public class LinkMan {
 
     /**
      * 配置联系人到客户的多对一关系
-     *     使用注解的形式配置多对一关系
-     *      1.配置表关系
-     *          @ManyToOne : 配置多对一关系
-     *              targetEntity：对方的实体类字节码
-     *      2.配置外键（中间表）
+     * 使用注解的形式配置多对一关系
+     * 1.配置表关系
      *
+     * @ManyToOne : 配置多对一关系
+     * targetEntity：对方的实体类字节码
+     * 2.配置外键（中间表）
+     * <p>
      * * 配置外键的过程，配置到了多的一方，就会在多的一方维护外键
-     *
      */
-    @ManyToOne(targetEntity = Customer.class,fetch = FetchType.LAZY)
-    @JoinColumn(name = "lkm_cust_id",referencedColumnName = "cust_id")
+    @ManyToOne(targetEntity = Customer.class, fetch = FetchType.LAZY)
+    @JoinColumn(name = "lkm_cust_id", referencedColumnName = "cust_id")
     private Customer customer;
 
     public Long getLkmId() {

@@ -27,7 +27,7 @@ public class JpqlTest {
     private CustomerDao customerDao;
 
     @Test
-    public void  findCustomerByCustName() {
+    public void findCustomerByCustName() {
         Customer customer = customerDao.findCustomerByCustName("杭州");
         System.out.println(customer);
     }

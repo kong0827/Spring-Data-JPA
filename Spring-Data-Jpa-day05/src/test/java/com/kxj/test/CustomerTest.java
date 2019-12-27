@@ -14,8 +14,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * @Author kongxiangjin
  * @Date 2019/11/11 13:32
  * @Version 1.0
- *
- *
  **/
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -38,8 +36,6 @@ public class CustomerTest {
         long count = customerDao.count();
         System.out.println(count);
     }
-
-
 
 
 }

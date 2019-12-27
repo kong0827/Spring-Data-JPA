@@ -23,7 +23,7 @@ import java.util.Optional;
  * @Desc 测试类
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations="classpath:applicationContext.xml")
+@ContextConfiguration(locations = "classpath:applicationContext.xml")
 public class CustomerDaoTest {
     @Autowired
     private CustomerDao customerDao;
@@ -96,10 +96,10 @@ public class CustomerDaoTest {
 
     /**
      * getOne的用法
-     *   需要在实体类上加@Proxy(lazy = false)注解
-     *   或者 在测试类上加上@Transactional
-     *
-     *   因为getOne实际em.getReference() 延迟加载
+     * 需要在实体类上加@Proxy(lazy = false)注解
+     * 或者 在测试类上加上@Transactional
+     * <p>
+     * 因为getOne实际em.getReference() 延迟加载
      */
     @Test
     @Transactional

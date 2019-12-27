@@ -101,9 +101,9 @@ public class CustomerTest {
 
     /**
      * 模糊匹配 查询对象
-     *  equal:直接得到path对象（属性），然后进行比较即可
-     *  gt,lt,ge,,le,like:得到path对象，根据path指定的参数类型，在去比较即可
-     *      指定参数类型：path.as(类型的字节码对象)
+     * equal:直接得到path对象（属性），然后进行比较即可
+     * gt,lt,ge,,le,like:得到path对象，根据path指定的参数类型，在去比较即可
+     * 指定参数类型：path.as(类型的字节码对象)
      */
     @Test
     public void testSpec3() {
@@ -117,7 +117,7 @@ public class CustomerTest {
                  * 第一个参数： 需要比较的比象(path对象)
                  * 第二个参数：当前需要比较的取值
                  */
-                Predicate predicate = criteriaBuilder.like(custName.as(String.class),"%奥巴马%");
+                Predicate predicate = criteriaBuilder.like(custName.as(String.class), "%奥巴马%");
 
                 // 将多个查询条件组合在一起(and,or)
                 return predicate;
@@ -135,7 +135,7 @@ public class CustomerTest {
             @Override
             public Predicate toPredicate(Root<Customer> root, CriteriaQuery<?> criteriaQuery, CriteriaBuilder criteriaBuilder) {
                 Path<Object> custName = root.get("custName");
-                Predicate predicate = criteriaBuilder.like(custName.as(String.class),"%奥巴马%");
+                Predicate predicate = criteriaBuilder.like(custName.as(String.class), "%奥巴马%");
                 return predicate;
             }
         };
@@ -149,14 +149,12 @@ public class CustomerTest {
 
     /**
      * 分页查询
-     *
-     *      Specification: 查询条件
-     *      Pageable:分页参数
-     *          分页参数： 查询的页码， ，每页查询的条件
-     *          findAll(Specification, Pageable) 带有条件的分页
-     *          findAll(Pageable)：没有条件的分页
-     *
-     *
+     * <p>
+     * Specification: 查询条件
+     * Pageable:分页参数
+     * 分页参数： 查询的页码， ，每页查询的条件
+     * findAll(Specification, Pageable) 带有条件的分页
+     * findAll(Pageable)：没有条件的分页
      */
     @Test
     public void testSpec5() {
@@ -179,9 +177,9 @@ public class CustomerTest {
             System.out.println(customer);
         }
 
-        System.out.println("总条数 "+customers.getTotalElements());
-        System.out.println("集合列表 "+customers.getContent());
-        System.out.println("总页数 "+customers.getTotalPages());
+        System.out.println("总条数 " + customers.getTotalElements());
+        System.out.println("集合列表 " + customers.getContent());
+        System.out.println("总页数 " + customers.getTotalPages());
 
     }
 
