@@ -1571,6 +1571,23 @@ List<T> getContent();
 | notLike                     | filed not like value |
 |                             |                      |
 
+
+ Page<PhenomenonKeys> keysPage = phenomenonKeysDao.findAll((root, criteriaQuery, criteriaBuilder) -> {
+            List<Predicate> predicatesList = new ArrayList<>();
+            if (startDate != null) {
+                predicatesList.add(criteriaBuilder.greaterThan(root.get("createTime"), startDate));
+            }
+            if (endDate != null) {
+                predicatesList.add(criteriaBuilder.lessThan(root.get("createTime"), DateUtil.addOneDay(endDate)));
+            }
+            Predicate[] predicate = new Predicate[predicatesList.size()];
+            return criteriaBuilder.and(predicatesList.toArray(predicate));
+        }, pageable);
+        List<PhenomenonKeysVO> phenomenonKeysVOList = null;
+        if (keysPage != null && keysPage.getContent().size() > 0) {
+            phenomenonKeysVOList = convertPhenomenonKeysVo(keysPage.getContent());
+        }
+
 #### **表之间关系的划分**
 
 数据库中多表之间存在着三种关系，如图所示。
