@@ -1470,6 +1470,24 @@ public class CustomerTest {
             System.out.println(customer);
         }
     }
+    
+```
+/**
+ * 多条件查询
+ *
+ /
+    Specification specification = (root, query, criteriaBuilder) -> {
+            List<Predicate> predicatesList = new ArrayList<>();
+            if (startDate != null) {
+                predicatesList.add(criteriaBuilder.greaterThan(root.get("createTime"), startDate));
+            }
+            if (endDate != null) {
+                predicatesList.add(criteriaBuilder.lessThan(root.get("createTime"), endDate));
+            }
+            Predicate[] predicate = new Predicate[predicatesList.size()];
+            return criteriaBuilder.and(predicatesList.toArray(predicate));
+        };
+```
 
     /**
      * 分页查询
