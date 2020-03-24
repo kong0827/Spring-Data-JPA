@@ -16,8 +16,8 @@ import java.time.LocalDate;
  */
 @Data
 @ToString
-//@NoArgsConstructor
-@AllArgsConstructor
+//@NoArgsConstructor 不可写，否则会出现类型转换错误
+@AllArgsConstructor // 必须写，转换时会调用
 public class UserDTO implements Serializable {
 
     private String name;
