@@ -33,6 +33,14 @@ public class JpaApplicationTest {
     }
 
     @Test
+    public void findByUserNamesTest() {
+        List<UserDTO> userDTOS = dao.findByUserNames("tom");
+        for (UserDTO userDTO : userDTOS) {
+            System.out.println(userDTO);
+        }
+    }
+
+    @Test
     public void findByNameTest() {
         List<UserDTO2> list = dao.findByUserName("tom");
         list.forEach(user -> System.out.println(user.toStringInfo()));

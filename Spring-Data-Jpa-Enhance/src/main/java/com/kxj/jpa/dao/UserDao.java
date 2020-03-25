@@ -1,5 +1,6 @@
 package com.kxj.jpa.dao;
 
+import com.kxj.jpa.dto.UserDTO;
 import com.kxj.jpa.dto.UserDTO2;
 import com.kxj.jpa.dto.UserDTO3;
 import com.kxj.jpa.dto.UserDTO4;
@@ -30,6 +31,9 @@ public interface UserDao extends JpaSpecificationExecutor<User>,
      * @return
      */
     <T> Optional<T> findById(int id, Class<T> type);
+
+    @Query(value = "select new com.kxj.jpa.dto.UserDTO(u.name, u.nickname, u.birthday) from User u where u.name = :name")
+    List<UserDTO> findByUserNames(@Param("name") String name);
 
     /**
      * 根据用户名查找
