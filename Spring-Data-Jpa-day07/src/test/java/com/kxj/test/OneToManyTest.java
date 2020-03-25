@@ -1,5 +1,6 @@
 package com.kxj.test;
 
+
 import com.kxj.dao.CustomerDao;
 import com.kxj.dao.LinkManDao;
 import com.kxj.entity.Customer;
@@ -12,7 +13,6 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.persistence.Temporal;
 import java.util.List;
 import java.util.Optional;
 

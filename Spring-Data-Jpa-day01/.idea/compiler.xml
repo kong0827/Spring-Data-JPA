@@ -6,7 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+<<<<<<< HEAD:Spring-Data-Jpa-day01/.idea/compiler.xml
         <module name="Spring-Data-Jpa-day01" />
+=======
+        <module name="SpringJPA" />
+>>>>>>> fc2afa4a311af005de2c4ac2dfd23d19915b67b9:SpringJPA/.idea/compiler.xml
       </profile>
     </annotationProcessing>
   </component>
