@@ -119,6 +119,7 @@ public class CustomerTest {
                  */
                 Predicate predicate = criteriaBuilder.like(custName.as(String.class), "%奥巴马%");
 
+                criteriaBuilder.function()
                 // 将多个查询条件组合在一起(and,or)
                 return predicate;
             }
@@ -135,7 +136,7 @@ public class CustomerTest {
             @Override
             public Predicate toPredicate(Root<Customer> root, CriteriaQuery<?> criteriaQuery, CriteriaBuilder criteriaBuilder) {
                 Path<Object> custName = root.get("custName");
-                Predicate predicate = criteriaBuilder.like(custName.as(String.class), "%奥巴马%");
+                Predicate predicate = criteriaBuilder.f(custName.as(String.class), "%奥巴马%");
                 return predicate;
             }
         };
